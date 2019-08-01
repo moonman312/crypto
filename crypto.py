@@ -6,6 +6,8 @@ import numpy as np
 import psycopg2
 import pandas as pd
 from matplotlib import pyplot
+from sklearn.ensemble import RandomForestRegressor
+from pylab import rcParams
 
 test_key = 'E2B37F93-9B44-4E58-8E38-1F9B6A31A8D0'
 
@@ -53,10 +55,26 @@ def read_data():
     df['time_close_epoch'] = (df['time_close'] - datetime.datetime(1970,1,1)).dt.total_seconds()
     df['time_period_start_epoch'] = (df['time_period_start'] - datetime.datetime(1970,1,1)).dt.total_seconds()
     df['time_period_end_epoch'] = (df['time_period_end'] - datetime.datetime(1970,1,1)).dt.total_seconds()
+    print(df.columns)
+    return df
+
+df = read_data()
+
+def plot_data(df):
     df.plot(kind='scatter', x='epoch', y='price_open')
     pyplot.show()
-    print(df.columns)
 
-    return
+def select_features(df):
+    inputs = df[['volume_traded', 'trades_count', 'time_open_epoch', 'time_close_epoch']]
+    X = inputs.values
+    Y = df['price_high'].values
+    model = RandomForestRegressor(n_estimators=50, random_state=1, min_samples_split=4)
+    model.fit(X,Y)
+    print(model.feature_importances_)
+    names = inputs.columns.values[0:-1]
+    count = [i for i in range(len(names))]
+    # pyplot.bar(count, model.feature_importances_)
+    # pyplot.xticks(count, names)
+    # pyplot.show()
 
-read_data()
+select_features(df)
