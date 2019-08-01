@@ -26,3 +26,8 @@ Enable PostGIS
 ### Run program  
 `python crypto.py`  
 You will be prompted to enter a symbol until you provide a valid one. You can run this command multiple times and select different cryptocurrencies. 
+
+## Results  
+![XRP](https://github.com/moonman312/crypto/blob/master/graphs/Screen%20Shot%202019-08-01%20at%201.10.54%20PM.png)  
+![ETH](https://github.com/moonman312/crypto/blob/master/graphs/Screen%20Shot%202019-08-01%20at%201.10.30%20PM.png)
+![BTC](https://github.com/moonman312/crypto/blob/master/graphs/Screen%20Shot%202019-08-01%20at%201.10.10%20PM.png)
