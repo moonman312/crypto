@@ -61,7 +61,7 @@ def read_data():
 df = read_data()
 
 def plot_data(df):
-    df.plot(kind='scatter', x='epoch', y='price_open')
+    df.plot(kind='scatter', x='time_open_epoch', y='price_open')
     pyplot.show()
 
 def select_features(df):
@@ -78,3 +78,4 @@ def select_features(df):
     # pyplot.show()
 
 select_features(df)
+plot_data(df)
