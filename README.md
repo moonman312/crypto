@@ -11,17 +11,17 @@ A simple pipeline for pulling in historical data about several cryptocurrencies 
   
 ## PostgreSQL and PostGIS installation in Mac OS 
 Install Postgres with Homebrew  
-`brew install postgres`  
+`brew install postgres`    
 Install PostGIS with Homebrew  
-`brew install postgis`  
+`brew install postgis`    
 Start PostgreSQL server  
-`pg_ctl -D /usr/local/var/postgres start`  
+`pg_ctl -D /usr/local/var/postgres start`    
 Create Database
-`initdb /usr/local/var/postgres`
+`initdb /usr/local/var/postgres`    
 Create a new database
-`createdb crypto`
+`createdb crypto`    
 Enable PostGIS
-`psql crypto`
+`psql crypto`    
 
 ### Run program  
 `python crypto.py`  
