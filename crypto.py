@@ -1,8 +1,8 @@
-import requests
+# import requests
 from coinapi_v1 import CoinAPIv1
 import datetime
 import SQLAlchemy
-
+import numpy as np
 
 test_key = 'E2B37F93-9B44-4E58-8E38-1F9B6A31A8D0'
 
