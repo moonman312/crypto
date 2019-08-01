@@ -10,11 +10,11 @@ A simple pipeline for pulling in historical data about several cryptocurrencies 
   
   
 ## PostgreSQL and PostGIS installation in Mac OS 
-Install Postgres with Homebrew  
+Install Postgres with Homebrew
 `brew install postgres`    
-Install PostGIS with Homebrew  
+Install PostGIS with Homebrew
 `brew install postgis`    
-Start PostgreSQL server  
+Start PostgreSQL server
 `pg_ctl -D /usr/local/var/postgres start`    
 Create Database
 `initdb /usr/local/var/postgres`    
