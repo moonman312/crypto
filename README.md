@@ -30,7 +30,9 @@ You will be prompted to enter a symbol until you provide a valid one. You can ru
 ## Results  
 ![XRP](https://github.com/moonman312/crypto/blob/master/graphs/Screen%20Shot%202019-08-01%20at%201.10.54%20PM.png)
 ### XRP price in relation to time in the past year  
+#
 ![ETH](https://github.com/moonman312/crypto/blob/master/graphs/Screen%20Shot%202019-08-01%20at%201.10.30%20PM.png)
 ### ETH price in relation to time in the past year  
+#
 ![BTC](https://github.com/moonman312/crypto/blob/master/graphs/Screen%20Shot%202019-08-01%20at%201.10.10%20PM.png)
 ### BTC price in relation to time in the past year  
